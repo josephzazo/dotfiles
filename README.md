@@ -1,2 +1,2 @@
 # dotfiles
-My config files for Niri and Noctalia
+> hnau-made configuration files for Niri and Noctalia
