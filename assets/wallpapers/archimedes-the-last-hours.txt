@@ -1,0 +1,61 @@
+================================================================================
+ARCHIMEDES: THE LAST HOURS — COLOR PALETTE PROFILE
+================================================================================
+
+[ Wallpaper Title: archimedes-the-last-hours ]
+
+This document profiles the color palette extracted from the classic engraving
+depicting the final, contemplative hours of Archimedes. The palette features 
+deep, desaturated olive charcoals paired with antique cream highlights, providing 
+a low-contrast, stoic, and focused aesthetic—ideal for terminal themes, custom 
+desktop environment borders, and status bars.
+
+--------------------------------------------------------------------------------
+PRIMARY WALLPAPER PALETTE
+--------------------------------------------------------------------------------
+
+● DEEP OLIVE CHARCOAL (Wallpaper Canvas Base)
+  Hex:    #2B2D27
+  RGB:    rgb(43, 45, 39)
+  Use:    Main desktop background, core terminal interface workspace.
+
+● DARK SLATE BLACK (Engraving Linework & Shadow)
+  Hex:    #1C1D1A
+  RGB:    rgb(28, 29, 26)
+  Use:    Active/Inactive window headers, status bars, block selection backgrounds.
+
+● FADED SAGE (Muted Mid-tone)
+  Hex:    #686C5E
+  RGB:    rgb(104, 108, 94)
+  Use:    Inactive window borders, non-focused text, line numbers, dividers.
+
+● ANTIQUE CREAM (Engraving Highlights)
+  Hex:    #D3CCB9
+  RGB:    rgb(211, 204, 185)
+  Use:    Primary active text, prominent UI labels, high-visibility prompts.
+
+● WARM SAND (Muted Highlight)
+  Hex:    #A29B87
+  RGB:    rgb(162, 155, 135)
+  Use:    Secondary text, folders, secondary tags, stable system metrics.
+
+--------------------------------------------------------------------------------
+COMPLEMENTARY ACCENTS (HISTORIC & STOIC)
+--------------------------------------------------------------------------------
+
+● TERRACOTTA / RUST (Warm Contrast)
+  Hex:    #9E5A42
+  RGB:    rgb(158, 90, 66)
+  Use:    Critical warnings, error highlighting, or striking active workspace tags.
+
+● MUTED FOREST GREEN (Organic Blend)
+  Hex:    #4A5844
+  RGB:    rgb(74, 88, 68)
+  Use:    Success indicators, added workspace accents, secondary icons.
+
+● STEEL BLUE (Cold Contrast)
+  Hex:    #4C585E
+  RGB:    rgb(76, 88, 94)
+  Use:    Information tags, background subtle highlights, alternative modes.
+
+================================================================================
