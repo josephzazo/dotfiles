@@ -9,7 +9,7 @@ Eventually this should include:
 - Noctalia
 - greetd
 - Noctalia Greeter
-- terminal emulator
+- kitty terminal emulator
 - PipeWire / WirePlumber
 - XDG portals
 - NetworkManager
