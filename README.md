@@ -1,7 +1,9 @@
 # Dotfiles
-> hnau-made configuration files
+*Hnau-made configuration files*
 
-My openSUSE Tumbleweed + Niri desktop configuration.
+My openSUSE Tumbleweed + Niri desktop configuration, managed primarily with chezmoi.
+
+# What's included
 
 ## Managed with chezmoi
 
@@ -19,13 +21,11 @@ Noctalia configuration is intentionally not synchronized. Each machine
 uses its own Noctalia defaults/settings.
 
 ## Bootstrap
+On a fresh openSUSE Tumbleweed installation, run:
 
-Run:
+`./scripts/setup-tumbleweed.sh`
 
-./scripts/setup-tumbleweed.sh
-
-### Note
-
-system/greetd/config.toml
-
-is not automatically deployed by chezmoi; the setup script installs it.
+> ### Note
+> `system/greetd/config.toml` is not automatically deployed by chezmoi.
+> 
+> The bootstrap script installs it.
