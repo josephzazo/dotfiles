@@ -3,6 +3,8 @@
 
 My openSUSE Tumbleweed + Niri desktop configuration, managed primarily with chezmoi.
 
+![Desktop screenshot](assets/screenshots/screenshot-2026-09-06.png)
+
 # What's included
 
 ## Managed with chezmoi
