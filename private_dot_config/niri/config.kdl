@@ -364,6 +364,15 @@ window-rule {
 
 }
 
+// Noctalia v5 Settings window.
+window-rule {
+    match app-id=r#"^dev\.noctalia\.Noctalia$"#
+
+    open-floating true
+    default-column-width { fixed 1080; }
+    default-window-height { fixed 920; }
+}
+
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
@@ -388,12 +397,7 @@ binds {
     // For example, this is a standard bind to toggle the screen reader (orca).
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
 
-    // Media controls via Noctalia v5.
-    XF86AudioPlay        allow-when-locked=true { spawn "noctalia" "msg" "media" "toggle"; }
-    XF86AudioStop        allow-when-locked=true { spawn "noctalia" "msg" "media" "stop"; }
-    XF86AudioPrev        allow-when-locked=true { spawn "noctalia" "msg" "media" "previous"; }
-    XF86AudioNext        allow-when-locked=true { spawn "noctalia" "msg" "media" "next"; }
-
+    
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
     // or do a four-finger swipe up on a touchpad.
@@ -555,11 +559,17 @@ binds {
     Mod+Comma { spawn "noctalia" "msg" "settings-toggle"; }
 
     // Audio & Brightness
-    XF86AudioRaiseVolume { spawn "noctalia" "msg" "volume-up"; }
-    XF86AudioLowerVolume { spawn "noctalia" "msg" "volume-down"; }
-    XF86AudioMute { spawn "noctalia" "msg" "volume-mute"; }
-    XF86MonBrightnessUp { spawn "noctalia" "msg" "brightness-up"; }
-    XF86MonBrightnessDown { spawn "noctalia" "msg" "brightness-down"; }
+    XF86AudioRaiseVolume  allow-when-locked=true { spawn "noctalia" "msg" "volume-up"; }
+    XF86AudioLowerVolume  allow-when-locked=true { spawn "noctalia" "msg" "volume-down"; }
+    XF86AudioMute         allow-when-locked=true { spawn "noctalia" "msg" "volume-mute"; }
+    XF86MonBrightnessUp   allow-when-locked=true { spawn "noctalia" "msg" "brightness-up"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "noctalia" "msg" "brightness-down"; }
+    // Media controls via Noctalia v5.
+    XF86AudioPlay        allow-when-locked=true { spawn "noctalia" "msg" "media" "toggle"; }
+    XF86AudioPause       allow-when-locked=true { spawn "noctalia" "msg" "media" "toggle"; }
+    XF86AudioStop        allow-when-locked=true { spawn "noctalia" "msg" "media" "stop"; }
+    XF86AudioPrev        allow-when-locked=true { spawn "noctalia" "msg" "media" "previous"; }
+    XF86AudioNext        allow-when-locked=true { spawn "noctalia" "msg" "media" "next"; }
 
     // Cycle through widths set in preset-column-widths.
     Mod+R { switch-preset-column-width; }
