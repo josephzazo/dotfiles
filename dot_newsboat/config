@@ -1,0 +1,24 @@
+# Browser
+browser "firefox %u"
+
+# Movement
+unbind-key j
+bind-key j down
+unbind-key k
+bind-key k up
+
+# Color Coding
+highlight all "---.*---" color131 default bold
+highlight all ".*(0/0))" black
+highlight article "(^Feed.*)" color69 default bold
+highlight article "(^Title:.*)" color166 default bold
+highlight article "(^Author.*)" color111 default bold
+highlight article "(^Link:)" color69
+highlight article "https?://[^ ]+" green
+
+# Saving Path
+save-path "/home/cat/Downloads/newsboat-saves"
+
+# Podboat Settings
+player "mpv --no-video"
+download-path "/home/cat/podboat-downloads" 
