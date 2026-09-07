@@ -1,5 +1,5 @@
 # Dotfiles
-*Hnau-made configuration files*
+*Hnau-made configuration files.*
 
 My openSUSE Tumbleweed + Niri desktop configuration, managed primarily with chezmoi.
 
