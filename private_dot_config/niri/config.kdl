@@ -3,9 +3,10 @@
 // Check the wiki for a full description of the configuration:
 // https://niri-wm.github.io/niri/Configuration:-Introduction
 
-spawn-at-startup "noctalia"
+// Tell Wayland applications to disable client-side window decorations/titlebars
+prefer-no-csd 
 
-// prefer-no-csd // have focus ring around the outside of windows that support it instead of behind them.
+spawn-at-startup "noctalia"
 
 cursor {
     xcursor-theme "Adwaita"
