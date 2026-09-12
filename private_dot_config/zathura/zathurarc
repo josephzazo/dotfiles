@@ -1,0 +1,9 @@
+include themes/catppuccin-mocha
+# Do not display the page/file title in the window title bar
+set window-title-basename false
+set window-title-page false
+
+set recolor                     "true"
+set recolor-keephue             "true"
+
+
