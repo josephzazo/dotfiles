@@ -1,3 +1,4 @@
+include ~/.newsboat/dark
 # Browser
 browser "firefox %u"
 
@@ -33,18 +34,6 @@ reload-threads 4
 
 # Don't stretch articles across a huge terminal
 text-width 100
-
-# ------------------------------------------------------------
-# Colors
-# ------------------------------------------------------------
-
-highlight all "---.*---" color131 default bold
-highlight all ".*(0/0))" black
-highlight article "^Feed.*" color69 default bold
-highlight article "^Title:.*" color166 default bold
-highlight article "^Author.*" color111 default bold
-highlight article "^Link:" color69
-highlight article "https?://[^ ]+" green
 
 # ------------------------------------------------------------
 # Podboat
