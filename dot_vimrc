@@ -1,19 +1,6 @@
-" Team style: 4 spaces
-set tabstop=4       " The width of a hard tab character
-set shiftwidth=4    " The width of an automatic indent (e.g., using >> or <<)
-set softtabstop=4   " Fine-tunes spaces so backspace deletes 4 spaces like a tab
-set expandtab       " Converts all inserted tabs into spaces
-set autoindent
+" Load Vim's standard defaults
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
 
-" Toggle between team style and classic Vim tabs
-function! ToggleIndent()
-    if &expandtab
-        set tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
-        echo "Classic Vim: 8-column tabs"
-    else
-        set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
-        echo "Team style: 4 spaces"
-    endif
-endfunction
-
-nnoremap <leader>t :call ToggleIndent()<CR>
+" --- Enable project-specific indentation ---
+packadd! editorconfig
