@@ -81,6 +81,11 @@ input {
         // scroll-button-lock
         // middle-emulation
     }
+    
+
+    tablet {
+	    map-to-output "HDMI-A-1"
+    }
 
     // Uncomment this to make the mouse warp to the center of newly focused windows.
     // warp-mouse-to-focus
